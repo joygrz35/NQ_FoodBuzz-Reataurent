@@ -1,0 +1,613 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Playball|Poppins:200i,400,700|Sedgwick+Ave+Display');
+/*
+font-family: 'Playball', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Poppins', sans-serif;*/
+
+body{
+	font-family: 'Poppins', sans-serif;
+
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #464646; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+   /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+  font-size: 34px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.header-section{
+    background: #e54d1d;
+    padding: 16px 0;
+}
+.header-info{
+    margin-bottom: 0;
+}
+.header-info li{
+    color: #fff;
+    font-size: 18px;
+}
+.header-info li span{
+    margin-left: 5px;
+}
+
+.social-link{text-align: right;margin-bottom: 0;}
+.social-link li{}
+.social-link li a{
+    color: #fff;
+    padding-left: 10px;
+}
+.social-link li a:hover{
+    color: #252525;
+}
+
+
+.banner-section{
+    background: url(../images/banner.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand{}
+.navbar-brand img{}
+.bg-light {
+    background-color: rgba(248, 249, 250, 0) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(208, 53, 29);
+}
+.banner-content{
+    padding-top: 140px;
+}
+.banner-content h3{
+    font-size: 50px;
+    color: #f55800;
+    font-family: 'Playball', cursive;
+}
+.banner-content h1{
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Sedgwick Ave Display', cursive;
+    line-height: 80%;
+}
+.banner-content span{
+    width: 100px;
+    height: 3px;
+    background: white;
+    display: inline-block;
+}
+.banner-content p{
+	    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-content .btn{
+    border: 2px solid #fff;
+    padding: 13px 1px;
+    display: inline-block;
+    border-radius: 0;
+}
+.banner-content .btn strong{
+    background: #fff;
+    padding: 10px 30PX;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+    margin: 3px;
+}
+.banner-content .btn:hover{
+    border: 2px solid #f55800;
+    padding: 13px 1px;
+    display: inline-block;
+    border-radius: 0;
+}
+
+
+.our-story-section{
+    padding-top: 50px;
+}
+.our-story-content{
+    text-align: center;
+}
+.our-story-content h4{
+    font-family: 'Playball', cursive;
+    font-size: 30px;
+    color: #f55800;
+}
+.our-story-content h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.our-story-content span{
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: #f55800;
+}
+.our-story-content p{
+    color: #949494;
+    font-size: 18px;
+    max-width: 460px;
+    margin: 40px auto;
+}
+.btn-custom{
+    font-size: 20px;
+    color: #000;
+    border: 1px solid;
+    border-radius: 0;
+    padding: 14px 55px;
+}
+
+
+
+.our-story-img {}
+.our-story-img img{}
+
+
+.menu-section{
+    background: url(../images/our_menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+}
+.menu-section::before{
+	content: "";
+	position: absolute;
+	background: #0000009e;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.menu-section .heading h1{
+    color: #fff;
+}
+.menu-section .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    justify-content: center;
+}
+
+.menu-section .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: #fff0;
+    border-color: #dee2e600 #dee2e600 #fff0;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.menu-section  .nav-tabs .nav-link.active,.menu-section   .nav-tabs .nav-item  .nav-link:hover {
+  
+    border-bottom: 2px solid red !important;
+    color: red !important;
+}
+.menu-section  .nav-tabs .nav-item {
+ 
+    margin-bottom: 30px;
+}
+.menu-section .nav-tabs {
+    border-bottom: 1px solid #dee2e600!important;
+ 
+}
+.tab-content > .tab-pane {
+    
+    background: #000;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.heading p{
+    font-family: 'Playball', cursive;
+    font-size: 30px;
+    color: #f55800;
+}
+.heading h1{
+    font-size: 45px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.heading span{
+    background: #f55800;
+    width: 70px;
+    height: 2px;
+    display: inline-block;
+}
+
+.menu-list{
+    color: #fff;
+    padding: 20px 10px;
+}
+.menu-list h2{
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+.menu-list ul{}
+.menu-list li{
+    margin-bottom: 15px;
+}
+.menu-list li p{
+    margin-bottom: 0;
+}
+.menu-list li span{
+    color: #545454;
+}
+
+
+.chef-rememended-section{
+    background: url(../images/title-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 60px;
+}
+.chef-rememended-section::before{content: "";position: absolute;background: #ffffffb3;top: 0;left: 0;width: 100%;height: 100%;}
+
+
+.food-gallery{
+    position: relative;
+    max-height: 320px;
+    overflow: hidden;
+}
+.food-gallery::before{
+content: "";
+    background: #08080894;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.food-gallery:hover::before{
+    width: 100%;
+
+}
+.food-gallery:hover p{
+	opacity: 1;
+}
+
+.food-gallery img{}
+.food-gallery p{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.food-gallery p span{
+    color: #b7b7b7;    display: block;
+}
+
+
+.features-section{
+    padding: 100px 0;
+}
+.feature{
+    text-align: center;
+}
+.feature img{}
+.feature h3{
+    margin: 30px 0 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.feature p{}
+
+.book-section {
+    background: url(../images/booke.jpg);
+    padding: 100px 0;
+    position: relative;
+}
+.book-section::before{
+	content: "";
+	content: "";
+	position: absolute;
+	background: #00000078;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.book-section h1{
+    color: #fff;
+}
+.reservation{}
+.reservation input{
+    padding: 10px;
+}
+.reservation .btn {
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 0px 1px;
+    display: inline-block;
+    border-radius: 0;
+}
+.reservation .btn:hover{
+    background: #f55800;
+    border: 3px solid #e9ecef;
+    padding: 0px 1px;
+    display: inline-block;
+    border-radius: 0;
+    color: white;
+}
+
+
+.events-section{
+    background: url(../images/upcoming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0;
+}
+.events-section::before{
+	content: "";
+	content: "";
+	position: absolute;
+	background: #ffffffe3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.event{}
+.event-schedule{
+    width: 80%;
+    background: #fff;
+    margin: 0 auto;
+    transform: translateY(-50px);
+    padding: 20px 20px;
+}
+.event-schedule ul{
+    /* overflow: hidden; */
+}
+.event-schedule ul li{
+    /* float: left; */
+    display: inline-block;
+    /* float: left; */
+}
+.event-schedule ul li p{
+    border: 2px solid #f55800;
+    color: #f55800;
+    text-align: center;
+    padding: 8px 5px;
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+.event-schedule ul li p > span{
+    color: #f55800;
+    display: block;
+}
+.event-schedule h3{
+    font-size: 20px;
+}
+.event-schedule ul li span{
+    color: #999;
+    font-size: 14px;
+}
+
+
+.contact-section{
+    background: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.address{
+    background: #000000d1;
+    color: #fff;
+    padding: 100px  60px;
+}
+.address p{
+}
+.address h1{font-size: 45px;}
+.address > span{
+    width: 100px;
+    height: 2px;
+    background: #f55800;
+    display: inline-block;
+}
+.address ul{
+    padding: 20px 0;
+}
+.address ul li{
+    padding: 5px 0;
+}
+.address ul li span.box{margin-right: 14px;border: 1px solid #f55800;height: 50px;width: 50px;display: inline-block;text-align: center;line-height: 50px;}
+.address ul li p{
+    display: inline-block;
+}
+.address ul li p strong{
+    display: block;
+    font-size: 20px;
+}
+.address ul li p span{
+    font-size: 16px;
+}
+.address .btn{
+    border: 1px solid #000000;
+    background: #ffff;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 0;
+    font-size: 20px;
+    color: black;
+}
+.address .btn:hover{
+    border: 1px solid #fff;
+    background: #f55800;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.address-details{}
+.google-icon{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+.google-icon img{
+
+}
+
+
+footer{
+    padding: 50px 0;
+    background: #252525;
+}
+.footer-logo {}
+.footer-logo img{}
+.address ul {
+    /* padding: 10px 0; */
+}
+.footer-address {
+    padding: 30px 0;
+}
+.footer-address li{
+    display: block;
+    color: #848484;
+}
+.footer-address li span{
+    margin-right: 10px;
+}
+.footer-address li span i{}
+
+.footer-social{}
+.footer-social li{}
+.footer-social li a{
+    color: #808080;
+}
+.footer-social li a:hover{
+    color: #fff;
+}
+.footer-social li a:hover{}
+
+.opening{
+    /* color: #fff; */
+}
+.opening h2{
+    color: #fff;
+    margin: 0;
+}
+.opening > span{
+    width: 100px;
+    height: 2px;
+    background: #f26020;
+    display: inline-block;
+}
+.time{
+    margin-top: 20px;
+}
+.time span{
+    color: #888888;
+}
+.time strong{
+    display: block;
+    color: #949494;
+    font-size: 28px;
+    border-bottom: 1px solid;
+    font-weight: 100;
+}
+.opening .time:last-child strong{
+
+    border-bottom: 0px solid;
+}
+.newsletter{}
+.newsletter h2{
+    color: #fff;
+    margin: 0;
+}
+.newsletter span{
+    width: 100px;
+    height: 2px;
+    background: #f26020;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.newsletter input{
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.newsletter .btn{
+    background: #f66122;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.top-footer{
+    background: #f55800;
+    position: relative;
+    padding: 10px 0;
+}
+.arrow{
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.arrow img{}
+
+
+.top-footer p{
+    margin: 0;
+    color: #fff;
+}
+.footer-menu{
+    margin-bottom: 0;
+    justify-content: flex-end;
+}
+.footer-menu li{
+    display: inline-block;
+}
+.footer-menu li a{
+    padding: 0;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.footer-menu li a:hover{
+    padding: 0;
+    padding-left: 20px;
+    color: #f55800;
+
+}
+
+
+.chef-rememended-section .heading h1{color: #000}
+.address-heading{
+    font-family: 'Playball', cursive;
+    color: #f55800;
+    font-size: 30px;
+}
